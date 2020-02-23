@@ -1,10 +1,10 @@
 /* ================================= 
-  Photo Overlay Transition
+  Photo Overlay Transitions
 ==================================== */
 
 .photo-overlay {
 	opacity: 0;
-	transition: all .5s;
+	transition: opacity .5s;
 }
 .photo-overlay:hover {
 	opacity: 1;
@@ -13,27 +13,39 @@
 /* ================================= 
   Button Transitions
 ==================================== */
+
 .button {
-  opacity:0;
-  transition: opacit .3s .2s, background .4s .3s, box-shadow .5s 0s;
-  transition-timing-function: ease-out;
+	transition: background .3s, color .3s;
 }
-
 .button:hover {
-  background: rgba(74, 137, 202, 1);
-  box-shadow: 0 0 0 3px rgba(255, 255,255, .7);
+	color: #fff;
+	background: #4a89ca;
 }
 
-.photo-overlay:hover .button {
-  opacity:1;
+/* ================================= 
+  Image Transforms & Transitions
+==================================== */
+
+/* -- Row 1 --------- */
+img {
+  transform: rotate();
 }
 
-.btn-icon {
-  transition: opacity, left .5s ease-out .3s;
-  
-}
 
-.button:hover .btn-icon {
-  opacity: 1;
-  left: 80%;
-}
+/* -- Row 2 --------- */
+
+
+
+/* -- Row 3 --------- */
+
+
+
+/* -- Logo ---------- */
+
+
+
+
+
+
+
+
